@@ -3,14 +3,15 @@ source 'https://rubygems.org'
 ruby '1.9.3'
 
 gem 'rails', '4.0.0'
+gem 'devise'
 
 group :development, :test do
-    gem 'sqlite3', group: [:development, :test]
+    gem 'sqlite3'
     gem 'debugger'
 end
 
 group :production do
-    gem 'pg', group: [:production]
+    gem 'pg'
 end
 
 gem 'sass-rails', '~> 4.0.0'

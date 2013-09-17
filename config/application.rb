@@ -19,5 +19,10 @@ module Omrails
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
+    
+    # Including the next line to remember it...it was needed for Heroku
+    # Rails 3.x deployments, but for Rails 4.x the option was removed
+    # and isn't needed.
+    #config.assets.initialize_on_precompile = false
   end
 end
