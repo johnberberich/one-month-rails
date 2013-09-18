@@ -4,6 +4,7 @@ ruby '1.9.3'
 
 gem 'rails', '4.0.0'
 gem 'devise'
+gem 'simple_form', '~> 3.0.0.rc'
 
 group :development, :test do
     gem 'sqlite3'
